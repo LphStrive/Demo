@@ -3,14 +3,18 @@
 
 <head>
   <title>Lee的博客</title>
-
   <link rel="stylesheet" href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css">
   <script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 </head>
+<style>
+  .a{
+  white-space: pre-wrap;
+  margin: 0 auto;
+}
+</style>
 
 <body>
-
   <!-- 主体 -->
   <div class="container">
     <!-- 标题 -->
@@ -28,10 +32,8 @@
         <div class="container-fluid">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
-
             <a class="navbar-brand" href="#">Lee</a>
           </div>
-
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
@@ -70,49 +72,59 @@
         </div>
       </nav>
     </div>
-
     <!-- 内容 -->
     <div class="row">
       <!-- 文章介绍 -->
-      <div class="col-md-9 well ">
-        <a href="content.html" class="list-group-item">
-          <span class="badge">新</span>
-          <h4 class="">文章标题
-            <small>2018-01-01</small>
-          </h4>
-        </a>
-        <a href="content.html" class="list-group-item">
-          <span class="badge">新</span>
-          <h4 class="">文章标题
-            <small>2018-01-01</small>
-          </h4>
-        </a>
+      <div class="col-md-9">
+        <div class="row well ">
+          <a href="content.html" class="list-group-item">
+            <span class="badge">新</span>
+            <h4 class="">文章标题
+              <small>2018-01-01</small>
+            </h4>
+          </a>
+          <a href="content.html" class="list-group-item">
+            <span class="badge">新</span>
+            <h4 class="">文章标题
+              <small>2018-01-01</small>
+            </h4>
+          </a>
+        </div>
+        <div class="row" style="text-align: center" >
+            <ul class="pagination pagination-lg" >
+                <li><a href="#" style="color: #333;">&laquo;</a></li>
+                <li><a href="#" style="color: #333;">1</a></li>
+                <li><a href="#" style="color: #333;">2</a></li>
+                <li><a href="#" style="color: #333;">3</a></li>
+                <li><a href="#" style="color: #333;">4</a></li>
+                <li><a href="#" style="color: #333;">5</a></li>
+                <li><a href="#" style="color: #333;">&raquo;</a></li>
+              </ul>
+        </div>
+    
       </div>
+
       <!-- 右部部件 -->
       <div class="col-md-3">
         <table class="table table-condensed ">
-          <thead>
+          <thead class="">
             <tr>
-              <th>文章名称</th>
-              <th>更新时间</th>
-              <th>阅读人数</th>
+              <th>联系方式</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Tanmay</td>
-              <td>Bangalore</td>
-              <td>560001</td>
+              <td><a href="">Name：</a></td>
+              <td>Lee</td>
+
             </tr>
             <tr>
-              <td>Sachin</td>
-              <td>Mumbai</td>
-              <td>400003</td>
+              <td><a href="">QQ：</a></td>
+              <td>984739083</td>
             </tr>
             <tr>
-              <td>Uma</td>
-              <td>Pune</td>
-              <td>411027</td>
+              <td><a href="">E-mail：</a></td>
+              <td>lph_2017@163.com</td>
             </tr>
           </tbody>
         </table>
