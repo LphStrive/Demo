@@ -1,0 +1,135 @@
+.frc {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.fcc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.fsb {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.fsa {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.flex_start {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.flex_end {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+page {
+  background: #E5E5E5;
+}
+.tags {
+  font-size: 27rpx;
+}
+.tags text {
+  position: relative;
+  color: #888888;
+}
+.tags .line {
+  position: relative;
+  top: -1rpx;
+  display: inline-block;
+  width: 40rpx;
+  font-size: 26rpx;
+  text-align: center;
+}
+.user {
+  position: relative;
+  height: 300rpx;
+  width: 100%;
+  background: #fff;
+}
+.user .bg {
+  position: absolute;
+  width: 670rpx;
+  height: 270rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 13rpx;
+}
+.user .avatar {
+  position: absolute;
+  width: 150rpx;
+  height: 150rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 50rpx;
+  border-radius: 50%;
+  border: 2rpx solid #7AA549;
+}
+.user .nickname {
+  position: absolute;
+  height: 150rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 230rpx;
+  font-size: 33rpx;
+}
+.list {
+  background: #fff;
+}
+.list .item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  border-top: 1rpx solid #E5E5E5;
+  line-height: 98rpx;
+  padding: 0 30rpx;
+  font-size: 34rpx;
+  font-family: PingFang-SC-Medium;
+  color: #333333;
+}
+.list .item .left {
+  width: 175rpx;
+  align-self: flex-start;
+}
+.list .item .right .tags {
+  line-height: 40rpx;
+  padding-bottom: 30rpx;
+}
+.btnGroup {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 120rpx;
+}
+.btnGroup .btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 260rpx;
+  height: 80rpx;
+  font-size: 36rpx;
+  font-family: PingFang-SC-Medium;
+}
+.btnGroup .btn.yes {
+  background: #7AA549;
+  color: #fff;
+}
+.btnGroup .btn.no {
+  background: #fff;
+  color: #7AA549;
+  border: 1rpx solid #BFBFBF;
+}

@@ -1,0 +1,41 @@
+swiper {
+  width: 750rpx;
+  height: 100rpx;
+}
+
+swiper-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150rpx;
+}
+
+.box {
+  width: 50rpx;
+  height: 50rpx;
+  background-color: red;
+  text-align: center;
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300rpx;
+  height: 100rpx;
+  background-color: #ccc;
+  opacity: 0.2;
+}
+.bg1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300rpx;
+  height: 100rpx;
+  background-color: #ccc;
+  opacity: 0.2;
+}
+.line{
+  height: 100rpx;
+  width: 750rpx;
+}

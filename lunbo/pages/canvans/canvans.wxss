@@ -1,0 +1,29 @@
+/* pages/canvans/canvans.wxss */
+
+.css {
+  margin: 0;
+}
+
+.cover-view {
+  position: absolute;
+  bottom: 158rpx;
+  width: 590rpx;
+  height: 85rpx;
+  background-color: #fff;
+  margin-left: 80rpx;
+  z-index: 1000;
+  text-align: center;
+  line-height: 85rpx;
+  
+}
+
+button {
+  /* position: absolute; */
+  bottom: 158rpx;
+  width: 590rpx;
+  height: 85rpx;
+  background-color: #fff;
+  /* margin-left: 80rpx; */
+  line-height: 85rpx;
+  /* z-index: 1000; */
+}

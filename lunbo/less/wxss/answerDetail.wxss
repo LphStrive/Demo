@@ -1,0 +1,293 @@
+.frc {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.fcc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.fsb {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.fsa {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.flex_start {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.flex_end {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+page {
+  background: #E5E5E5;
+}
+.arrow {
+  content: "";
+  display: block;
+  width: 20rpx;
+  height: 20rpx;
+  border-right: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  transform: rotate(45deg);
+}
+.lables {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background: #fff;
+  font-size: 28rpx;
+  white-space: nowrap;
+  padding: 30rpx 0;
+}
+.lables .lable {
+  display: inline-block;
+  min-width: 157rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  background: #e8ece4;
+  margin-right: 30rpx;
+  font-size: 28rpx;
+  color: #888;
+}
+.lables .lable:first-child {
+  margin-left: 30rpx;
+}
+.headView {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.headView .heade {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  font-weight: normal;
+  color: #888;
+}
+.headView .heade .avatar {
+  margin-right: 16rpx;
+}
+.headView .checkBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 26rpx;
+  font-family: PingFang-SC-Regular;
+  color: #7AA549;
+}
+.headView .checkBox .radio {
+  margin-left: 16rpx;
+  position: relative;
+  width: 40rpx;
+  height: 40rpx ;
+  border-radius: 50%;
+  border: 1rpx solid #7AA549;
+  box-sizing: border-box;
+}
+.headView .checkBox .radio.check::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 5rpx;
+  top: 5rpx;
+  width: 28rpx;
+  height: 28rpx;
+  background: #7AA549;
+  border-radius: 50%;
+}
+/* 问题详情 */
+.question {
+  background: #fff;
+  position: relative;
+  padding: 0 30rpx;
+}
+.question .titleView {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.question .titleView .title {
+  margin-top: 25rpx;
+  margin-left: 15rpx;
+  font-size: 17px;
+  font-weight: 700;
+  color: #333;
+}
+.question .titleView .left {
+  position: absolute;
+  top: 55rpx;
+  width: 54rpx;
+  height: 31rpx;
+}
+.question .describle {
+  position: relative;
+  border-bottom: 1rpx solid #E5E5E5;
+  font-size: 28rpx;
+  font-family: PingFang-SC-Medium;
+  color: #333;
+  line-height: 42rpx;
+  margin-top: 10rpx;
+}
+.question .describle .describleTxt {
+  height: 80rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.question .describle .describleTxt.moreTxt {
+  height: inherit;
+  display: block;
+}
+.question .describle .showAll,
+.question .describle .closeAll {
+  position: relative;
+  text-align: right;
+  font-size: 14px;
+  color: #888;
+  padding: 30rpx 50rpx;
+}
+.question .describle .showAll::after,
+.question .describle .closeAll::after {
+  position: absolute;
+  top: 33rpx;
+  right: 10rpx;
+  content: "";
+  display: block;
+  width: 20rpx;
+  height: 20rpx;
+  border-right: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  transform: rotate(45deg);
+}
+.question .describle .closeAll::after {
+  top: 48rpx;
+  transform: rotate(225deg);
+}
+.question .bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+  font-family: PingFang-SC-Medium;
+  color: #7AA549;
+  height: 107rpx;
+}
+.question .bottom text {
+  text-decoration: underline;
+}
+.question .bottom text::after {
+  content: '>';
+  display: inline;
+}
+/* 回答数量 */
+.number {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100rpx;
+  padding: 0 30rpx;
+  margin-top: 30rpx;
+  background: #fff;
+  font-size: 30rpx;
+  color: #888;
+}
+.number .new {
+  position: relative;
+  padding-right: 40rpx;
+}
+.number .new::after {
+  position: absolute;
+  top: 3rpx;
+  right: 0;
+  content: "";
+  display: block;
+  width: 20rpx;
+  height: 20rpx;
+  border-right: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  transform: rotate(45deg);
+}
+/* 回答列表 */
+.answer-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 30rpx;
+  padding: 0 30rpx;
+  height: 88rpx;
+  border-bottom: 1rpx solid #E5E5E5;
+  background: #fff;
+  font-size: 30rpx;
+  font-family: PingFang-SC-Medium;
+  color: #888;
+}
+.answer-list {
+  background: #fff;
+  padding: 30rpx;
+}
+.answer-list .answer-txt {
+  margin-top: 30rpx;
+  height: 111rpx;
+  font-size: 28rpx;
+  color: #333;
+}
+.answer-list .answer-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30rpx;
+  font-size: 26rpx;
+  color: #888;
+}
+.answer-list .answer-btn .ok {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.answer-list .answer-btn .ok .ok-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-right: 80rpx;
+}
+.answer-list .answer-btn image {
+  margin-right: 10rpx;
+  width: 26rpx;
+  height: 26rpx;
+}
+.answer-list .answer-btn .report {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,18 @@
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" display-multiple-items="5" bindchange="current">
+  <swiper-item>
+  </swiper-item>
+  <swiper-item>
+  </swiper-item>
+  <swiper-item wx:for="{{list}}" wx:key="key" current="{{item.id}}">
+    <view class='box'>{{item.id}}</view>
+  </swiper-item>
+   <swiper-item>
+  </swiper-item>
+  <swiper-item>
+  </swiper-item>
+</swiper>
+<view class='bg'></view>
+<view class='bg1'></view>
+<view class="line"></view>
+<view>{{current}}</view>
+<button open-type='share'>分享</button>

@@ -1,0 +1,5 @@
+<canvas  canvas-id="myCanvas" style=" width:100vw;height:1334rpx;  margin: 0; border:0;">
+<cover-view class='cover-view' bindtap='saveImg'>
+  点击保存
+</cover-view>
+</canvas>

@@ -1,0 +1,12 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/donghua/donghua",
+    "pages/canvans/canvans",
+    "pages/logs/logs"
+  ]
+
+
+
+
+}

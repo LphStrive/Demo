@@ -1,0 +1,67 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.3.2",
+	"appid": "wx64939b8dcd9ff394",
+	"projectname": "%E8%BD%AE%E6%92%AD",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 3,
+			"list": [
+				{
+					"id": -1,
+					"name": "zhanshi",
+					"pathName": "pages/logs/logs",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "动画一",
+					"pathName": "pages/donghua/donghua",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "展开",
+					"pathName": "pages/logs/logs",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "画布",
+					"pathName": "pages/canvans/canvans"
+				}
+			]
+		}
+	}
+}

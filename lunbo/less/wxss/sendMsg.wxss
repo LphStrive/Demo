@@ -1,0 +1,136 @@
+page {
+  background: #E5E5E5;
+}
+.item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: #fff;
+}
+.item.friend {
+  padding: 0 30rpx;
+  height: 210rpx;
+}
+.item.friend::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 1rpx;
+  height: 100rpx;
+  background: #7AA549;
+}
+.item .avatar {
+  width: 126rpx;
+  height: 126rpx;
+  border: 1rpx solid #7AA549;
+  border-radius: 126rpx;
+  flex-shrink: 0;
+}
+.item .info {
+  margin-left: 20rpx;
+  flex: 1;
+  height: 100%;
+}
+.item .info .top {
+  margin-top: 40rpx;
+  display: flex;
+  justify-content: space-between;
+  font-size: 32rpx;
+  line-height: 50rpx;
+}
+.item .info .top .name {
+  max-width: 180rpx;
+  height: 50rpx;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.item .info .top .name text {
+  height: 50rpx;
+  line-height: 50rpx;
+  overflow: hidden;
+  max-width: 180rpx;
+  text-overflow: ellipsis;
+}
+.item .info .bottom {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 110rpx;
+}
+.item .info .bottom .tags {
+  font-size: 27rpx;
+}
+.item .info .bottom .tags text {
+  position: relative;
+  color: #888888;
+}
+.item .info .bottom .tags .line {
+  position: relative;
+  top: -1rpx;
+  display: inline-block;
+  width: 40rpx;
+  font-size: 26rpx;
+  text-align: center;
+}
+.edit {
+  margin-top: 20rpx;
+  background: #fff;
+  padding: 0 30rpx;
+}
+.edit textarea {
+  padding: 20rpx 0;
+  width: 100%;
+  font-size: 28rpx;
+  height: 245rpx;
+  box-sizing: border-box;
+}
+.edit .editView {
+  height: 90rpx;
+  line-height: 88rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border-top: 1rpx solid #E5E5E5; */
+  font-size: 28rpx;
+  color: #333;
+}
+.edit .editView .btnGroup {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 750rpx;
+}
+.edit .editView .btnGroup image {
+  margin: 0 35rpx;
+}
+.edit .editView .btnGroup .imgIcon {
+  width: 51rpx;
+  height: 42rpx;
+}
+.edit .editView .btnGroup .videoIcon {
+  width: 60rpx;
+  height: 40rpx;
+}
+.edit .editView .btnGroup .audioIcon {
+  width: 48rpx;
+  height: 48rpx;
+}
+.bottomSend {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 157rpx;
+  padding: 30rpx 30rpx 0 30rpx;
+  background: #fff;
+  box-sizing: border-box;
+}
+.bottomSend .btn {
+  width: 690rpx;
+  background: #7AA549;
+  line-height: 80rpx;
+  border-radius: 5rpx;
+  color: #fff;
+  text-align: center;
+}
