@@ -6,7 +6,7 @@
   <swiper-item wx:for="{{list}}" wx:key="key" current="{{item.id}}">
     <view class='box'>{{item.id}}</view>
   </swiper-item>
-   <swiper-item>
+  <swiper-item>
   </swiper-item>
   <swiper-item>
   </swiper-item>
@@ -16,3 +16,21 @@
 <view class="line"></view>
 <view>{{current}}</view>
 <button open-type='share'>分享</button>
+<view class='bgBox1'>
+  <view class='dian'></view>
+</view>
+<view class='bgBox2'>
+  <view class='dian2'></view>
+  <view class='dian2'></view>
+</view>
+<view class='bgBox3'>
+  <view class='dian2'></view>
+  <view class='dian2'></view>
+  <view class='dian2'></view>
+</view>
+<view class='bgBox4'>
+  <view class='dian2'></view>
+  <view class='dian2'></view>
+  <view class='dian2'></view>
+  <view class='dian2'></view>
+</view>

@@ -26,6 +26,7 @@ swiper-item {
   background-color: #ccc;
   opacity: 0.2;
 }
+
 .bg1 {
   position: absolute;
   top: 0;
@@ -35,7 +36,76 @@ swiper-item {
   background-color: #ccc;
   opacity: 0.2;
 }
-.line{
+
+.line {
   height: 100rpx;
   width: 750rpx;
+}
+
+.bgBox1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200rpx;
+  height: 200rpx;
+  border: 2rpx solid #ccc;
+  background-color: #e5e5e5;
+  border-radius: 10rpx;
+}
+
+.dian {
+  width: 50rpx;
+  height: 50rpx;
+  background-color: #333;
+  border-radius: 50%;
+}
+
+.bgBox2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 200rpx;
+  height: 200rpx;
+  border: 2rpx solid #ccc;
+  background-color: #e5e5e5;
+  border-radius: 10rpx;
+}
+.dian2 {
+  width: 50rpx;
+  height: 50rpx;
+  background-color: #333;
+  border-radius: 50%;
+}
+.dian2:nth-child(2){
+  width: 50rpx;
+  height: 50rpx;
+  background-color: #333;
+  border-radius: 50%;
+  align-self: flex-end;
+}
+.bgBox3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 200rpx;
+  height: 200rpx;
+  border: 2rpx solid #ccc;
+  background-color: #e5e5e5;
+  border-radius: 10rpx;
+}
+.bgBox3 .dian2:nth-child(2){
+  align-self: center;
+}
+.bgBox3 .dian2:nth-child(3){
+  align-self: flex-end;
+}
+.bgBox4 {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 200rpx;
+  height: 200rpx;
+  border: 2rpx solid #ccc;
+  background-color: #e5e5e5;
+  border-radius: 10rpx;
 }
