@@ -1,0 +1,5 @@
+<view class='bgbox'>
+  <view class='inbox'></view>
+</view>
+
+<progress percent="20" /> 

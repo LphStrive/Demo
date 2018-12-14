@@ -36,7 +36,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 3,
+			"current": 4,
 			"list": [
 				{
 					"id": -1,
@@ -59,7 +59,14 @@
 				{
 					"id": -1,
 					"name": "画布",
-					"pathName": "pages/canvans/canvans"
+					"pathName": "pages/canvans/canvans",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "进度条",
+					"pathName": "pages/jindutiao/jindutiao",
+					"query": ""
 				}
 			]
 		}

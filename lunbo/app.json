@@ -3,6 +3,7 @@
     "pages/index/index",
     "pages/donghua/donghua",
     "pages/canvans/canvans",
+    "pages/jindutiao/jindutiao",
     "pages/logs/logs"
   ]
 

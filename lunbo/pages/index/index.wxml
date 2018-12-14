@@ -28,9 +28,4 @@
   <view class='dian2'></view>
   <view class='dian2'></view>
 </view>
-<view class='bgBox4'>
-  <view class='dian2'></view>
-  <view class='dian2'></view>
-  <view class='dian2'></view>
-  <view class='dian2'></view>
-</view>
+<view class='f'></view>

@@ -1,0 +1,11 @@
+/* pages/jindutiao/jindutiao.wxss */
+.bgbox{
+  width: 500rpx;
+  height: 30rpx;
+  background-color: #ccc;
+}
+.inbox{
+  width: 100rpx;
+  height: 30rpx;
+  background-color: red;
+}
