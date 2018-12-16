@@ -96,6 +96,8 @@ Page({
       list
     });
   },
+
+  
   //让所有的展开项，都变为收起
   packUp(data, index) {
     for (let i = 0, len = data.length; i < len; i++) { //其他最外层列表变为关闭状态

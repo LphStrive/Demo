@@ -1,13 +1,6 @@
 const app = getApp();
-import {
-  imgBaseUrl,
-} from '../../utils/config.js';
-import {
-  request as R,
-} from '../../utils/request.js';
-import {
-  cons
-} from '../../utils/util.js';
+
+
 Page({
   data: {
     list: [{
