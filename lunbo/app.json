@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/bolang/bolang",
     "pages/index/index",
     "pages/donghua/donghua",
     "pages/canvans/canvans",
