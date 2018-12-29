@@ -83,3 +83,11 @@ swiper-item {
   border-radius: 50%;
   align-self: flex-end;
 }
+.btn{
+  position: absolute;
+text-align: center;
+}
+.text{
+
+
+}

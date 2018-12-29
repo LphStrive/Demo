@@ -4,7 +4,8 @@
     "pages/donghua/donghua",
     "pages/canvans/canvans",
     "pages/jindutiao/jindutiao",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/play/play"
   ]
 
 

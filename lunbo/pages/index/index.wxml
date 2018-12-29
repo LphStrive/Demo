@@ -24,3 +24,8 @@
   <view class='dian2'></view>
 </view>
 <view class='f'></view>
+
+<radio class='btn'>
+  <view class='text'>a</view>
+</radio>
+<icon class='icon' type='success' color='#3683FF'></icon>

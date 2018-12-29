@@ -36,7 +36,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 4,
+			"current": 5,
 			"list": [
 				{
 					"id": -1,
@@ -67,6 +67,11 @@
 					"name": "进度条",
 					"pathName": "pages/jindutiao/jindutiao",
 					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "语音进度条",
+					"pathName": "pages/play/play"
 				}
 			]
 		}

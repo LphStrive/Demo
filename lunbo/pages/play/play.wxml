@@ -1,0 +1,5 @@
+<button class="play" bindtap='play'>开始</button>
+<button class="stop" bindtap="stop">暂停</button>
+<view class='line'>
+  <view class="have" style='width:{{width}}rpx'></view>
+</view>
