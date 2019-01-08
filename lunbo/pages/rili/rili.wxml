@@ -1,0 +1,28 @@
+<!-- <view class='box1' style='width: {{ sysW * 7 }}px'>
+  <view class='dateBox'>{{ year }} - {{ month}}</view>
+  <block wx:for='{{ weekArr }}'>
+    <view style='width: {{ sysW }}px; height: {{ sysW }}px; line-height: {{ sysW }}px;'>{{ item }}</view>
+  </block>
+  <block wx:for='{{ arr }}'>
+    <view style='{{ index == 0 ? "margin-left:" + sysW * marLet + "px;" : "" }}width: {{ sysW }}px; height: {{ sysW }}px; line-height: {{ sysW }}px;' class='{{ item ==  getDate ? "dateOn" : ""}}'>{{ item }}</view>
+  </block>
+</view> -->
+
+<view class="calendar">
+  <view class="selectDate">
+    <view class="goleft" bindtap="prevMonth"> 上 </view>
+    <view class="date-wrap">
+      {{year}}年{{month}}月
+    </view>
+    <view class="goright" bindtap="nextMonth"> 下 </view>
+  </view>
+  <view class="week">
+    <view wx:for="{{weekArr}}" wx:for-index="index" wx:for-item="item" wx:key="key" style="width:{{param}}px;height:{{param-17}}px;line-height:{{param-17}}px">{{item}}</view>
+  </view>
+  <view class="date" style='width: {{ param * 7 }}px;'>
+    <block wx:for="{{dateArr}}" wx:for-index="index" wx:for-item="item" wx:key="key">
+      <view style="{{index ==0?'margin-left:'+ param *firstDay +'px;':''}}width:{{param}}px;height:{{param-10}}px;line-height:{{param-10}}px;" class="{{index+1==day?'today':''}} {{index+1==day&&isClock?'clockOn':''}}"><view class="day">{{item}}</view></view>
+    </block>
+  </view>
+</view>
+

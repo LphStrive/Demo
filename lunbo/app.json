@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/bolang/bolang",
+    "pages/rili/rili",
     "pages/index/index",
     "pages/donghua/donghua",
     "pages/canvans/canvans",
