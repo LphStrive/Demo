@@ -12,7 +12,7 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.3.2",
-	"appid": "wx64939b8dcd9ff394",
+	"appid": "wx67effcf18984b86b",
 	"projectname": "%E8%BD%AE%E6%92%AD",
 	"debugOptions": {
 		"hidedInDevtools": []
@@ -36,7 +36,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 6,
+			"current": 8,
 			"list": [
 				{
 					"id": -1,
@@ -69,15 +69,28 @@
 					"query": ""
 				},
 				{
-					"id": -1,
-					"name": "语音进度条",
+					"id": 5,
+					"name": "播放语音动画",
 					"pathName": "pages/play/play",
 					"query": ""
 				},
 				{
 					"id": -1,
 					"name": "日历",
-					"pathName": "pages/rili/rili"
+					"pathName": "pages/rili/rili",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "地图",
+					"pathName": "pages/map/map",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "高德地图",
+					"pathName": "pages/gdmap/gdmap",
+					"query": ""
 				}
 			]
 		}

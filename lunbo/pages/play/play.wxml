@@ -1,5 +1,9 @@
-<button class="play" bindtap='play'>开始</button>
-<button class="stop" bindtap="stop">暂停</button>
-<view class='line'>
-  <view class="have" style='width:{{width}}rpx'></view>
+<view class='boxs'>
+  <image src='/images/icons/start.png' wx:if="{{!paly}}" class='startImg' bindtap='play'></image>
+  <image src='/images/icons/stop.png' wx:else class='stopImg' bindtap="stop"></image>
+  <view>{{startTime}}</view>
+  <view class='line'>
+    <view class="have" style='width:{{width}}rpx'></view>
+  </view>
+  <view>{{endTime}}</view>
 </view>

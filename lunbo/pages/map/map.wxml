@@ -1,0 +1,18 @@
+<map  id="myMap" class="map" latitude="{{latitude}}" longitude="{{longitude}}" markers="{{markers}}" show-compass="true"  include-points='{{markers}}' show-location bindcallouttap="getmarkers">
+</map>
+<view class='text'>
+  <view class='btn'>
+    <button class='car'>约车</button>
+    <button class='user'>紧急联系人</button>
+  </view>
+  <view class='tab'>
+    <view class='index'>
+      <image src='/images/icons/index.png'></image>
+      <view>首页</view>
+    </view>
+    <view class='me'>
+      <image src='/images/icons/me.png'></image>
+      <view>个人中心</view>
+    </view>
+  </view>
+</view>

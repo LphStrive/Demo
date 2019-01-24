@@ -1,5 +1,7 @@
 {
   "pages": [
+    "pages/map/map",
+    "pages/gdmap/gdmap",
     "pages/bolang/bolang",
     "pages/rili/rili",
     "pages/index/index",
@@ -8,9 +10,18 @@
     "pages/jindutiao/jindutiao",
     "pages/logs/logs",
     "pages/play/play"
-  ]
-
-
-
-
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "window": {
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "个人Demo",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  }
 }

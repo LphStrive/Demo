@@ -1,15 +1,23 @@
 /* pages/play/play.wxss */
 
-button {
-  margin-top: 50rpx;
-  border: 2rpx solid #ccc;
+.boxs {
+  display: flex;
+  align-items: center;
+  width: 680rpx;
+  height: 100rpx;
+  padding: 0 20rpx;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  font-size: 30rpx;
+  box-sizing: border-box;
 }
 
 .line {
   position: relative;
-  width: 500rpx;
-  height: 10rpx;
+  width: 300rpx;
+  height: 8rpx;
   margin: 50rpx auto;
+  border-radius: 4rpx;
   background-color: #ccc;
   overflow: hidden;
 }
@@ -17,31 +25,18 @@ button {
 .have {
   position: absolute;
   left: 0;
-  height: 10rpx;
-  background-color: red;
+  height: 8rpx;
+  background-color: #e0620d;
 }
 
-/* .active {
-  animation-name: have;
-  animation-duration: 5s;
-  animation-timing-function: linear;
-  animation-delay: 2s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-play-state: running;
+.startImg {
+  width: 68rpx;
+  height: 68rpx;
+  margin-right: 20rpx;
 }
 
-@keyframes have {
-  from {
-    width: 0%;
-  }
-
-  to {
-    width: 100%;
-  }
-} */
-
-/* .active {
-  transition: 10s;
-  transform: translateX(100rpx);
-} */
+.stopImg {
+  width: 68rpx;
+  height: 68rpx;
+  margin-right: 20rpx;
+}
