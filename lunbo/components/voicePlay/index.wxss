@@ -1,0 +1,42 @@
+/* pages/play/play.wxss */
+
+.voicePlayBtn {
+  display: flex;
+  align-items: center;
+  width: 680rpx;
+  height: 100rpx;
+  padding: 0 20rpx;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  font-size: 30rpx;
+  box-sizing: border-box;
+}
+
+.line {
+  position: relative;
+  width: 300rpx;
+  height: 8rpx;
+  margin: 50rpx auto;
+  border-radius: 4rpx;
+  background-color: #ccc;
+  overflow: hidden;
+}
+
+.have {
+  position: absolute;
+  left: 0;
+  height: 8rpx;
+  background-color: #e0620d;
+}
+
+.startImg {
+  width: 68rpx;
+  height: 68rpx;
+  margin-right: 20rpx;
+}
+
+.stopImg {
+  width: 68rpx;
+  height: 68rpx;
+  margin-right: 20rpx;
+}
