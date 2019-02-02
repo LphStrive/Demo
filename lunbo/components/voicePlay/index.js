@@ -13,18 +13,19 @@ Component({
     },
     voiceSrc:{
       type: String,
-      value: "http://ws.stream.qqmusic.qq.com/M500001VfvsJ21xFqb.mp3?guid=ffffffff82def4af4b12b3cd9337d5e7&uin=346897220&vkey=6292F51E1E384E061FF02C31F716658E5C81F5594D561F2E88B854E81CAAB7806D5E4F103E55D33C16F3FAC506D1AB172DE8600B37E43FAD&fromtag=46"
+      value: ""
     }
   },
   data:{
     play: false,
     startTime: "00:00",
-    endTime: "01:20",
+    endTime: "",
   },
   methods:{
+    // 播放
     play: function () {
       const that = this;
-
+      that.endTime(that.data.endTime);
       innerAudioContext.autoplay = true
       innerAudioContext.src = that.data.voiceSrc;
       innerAudioContext.play();
@@ -37,6 +38,7 @@ Component({
       })
       that.move(that)
     },
+    // 暂停
     stop: function () {
       const that = this;
       innerAudioContext.pause();
@@ -50,21 +52,22 @@ Component({
     },
     // 进度条动画
     move: function (that) {
-      let i = that.data.add || 0;
-      let time = 80;
+      let finishTime = that.data.add || 0;
+      let endTime = that.endTime(that.data.endTime);//结束时间转换格式
       that.setData({
         paly: true
       })
       timer = setInterval(function () {
-        i++;
-        let width = (i / time) * 300;
+        finishTime++;
+        let width = (finishTime / endTime) * 300;
         that.setData({
           width: width,
-          add: i
+          add: finishTime
         })
-        that.addTime(i, that);
-        if (i > 79) {
+        that.addTime(finishTime);
+        if (finishTime > endTime) {
           clearInterval(timer);
+          innerAudioContext.stop()
           that.setData({
             width: 0,
             add: 0,
@@ -77,8 +80,9 @@ Component({
         play: true
       })
     },
-    // 时间计算
-    addTime: function (time, that) {
+    // 播放时间时间计算
+    addTime: function (time) {
+      const that=this;
       let timeAfter = time.toString().padStart(2, '0');
       if (parseInt(timeAfter) < 60) {
         that.setData({
@@ -95,5 +99,17 @@ Component({
         })
       }
     },
+    // 结束时间格式转换
+    endTime: function (endTime){
+      const that=this;
+      let minute = endTime.substring(0,2)
+      let second = endTime.substring(3,5);
+      if (parseInt(minute)>0){
+        let numTime = parseInt(minute) * 60 + parseInt(second);
+        return numTime;
+      }else{
+        return parseInt(second);
+      }
+    }
   }
 })
