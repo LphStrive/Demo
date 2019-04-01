@@ -3,6 +3,10 @@ const app = getApp();
 
 Page({
   data: {
+    Length: 6,    //输入框个数 
+    isFocus: true,  //聚焦 
+    Value: "",    //输入的内容 
+    ispassword: true, //是否密文显示 true为密文， false为明文。
     list: [{
         id: 1,
         name: "box1"
@@ -49,17 +53,17 @@ Page({
       },
 
     ],
-    time:new Date()
+    time: new Date()
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-  
+
     const that = this;
     console.log(that.data.time)
-    let time = that.data.time.substring(0,9)
+    let time = that.data.time.substring(0, 9)
     console.log(time)
   },
   current: function(e) {
@@ -72,6 +76,30 @@ Page({
 
 
   },
+  flexbg: function() {
+    this.setData({
+      show: true
+    })
+  },
+
+  
+  Focus(e) {
+    var that = this;
+    console.log(e.detail.value);
+    var inputValue = e.detail.value;
+    that.setData({
+      Value: inputValue,
+    })
+  },
+  Tap() {
+    var that = this;
+    that.setData({
+      isFocus: true,
+    })
+  },
+  formSubmit(e) {
+    console.log(e.detail.value.password);
+  }, 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
@@ -117,7 +145,7 @@ Page({
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function (options) {
-    
+  onShareAppMessage: function(options) {
+
   }
 })

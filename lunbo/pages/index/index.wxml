@@ -15,17 +15,44 @@
 <view class='bg1'></view>
 <view class="line"></view>
 <view>{{current}}</view>
-<button open-type='share'>分享</button>
-<view class='bgBox1'>
-  <view class='dian'></view>
-</view>
-<view class='bgBox2'>
-  <view class='dian2'></view>
-  <view class='dian2'></view>
-</view>
-<view class='f'></view>
 
-<radio class='btn'>
-  <view class='text'>a</view>
-</radio>
-<icon class='icon' type='success' color='#3683FF'></icon>
+<button bindtap='flexbg'> 弹窗</button>
+<view wx:if="{{show}}" class='boxbg'></view>
+<view wx:if="{{show}}" class='inner'>
+
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" display-multiple-items="1" bindchange="current" next-margin='120'>
+
+    <swiper-item wx:for="{{list}}" wx:key="key" current="{{item.id}}">
+      <view class='box'>{{item.id}}</view>
+    </swiper-item>
+  </swiper>
+
+  <view>{{current}}</view>
+</view>
+
+
+
+<!-- 输入框 -->
+<form bindsubmit="formSubmit">
+  <view class='content'>
+    <block wx:for="{{Length}}" wx:key="item">
+      <input class='iptbox' value="{{Value.length>=index+1?Value[index]:''}}" disabled password='{{ispassword}}' catchtap='Tap'></input>
+    </block>
+  </view>
+  <input name="password" password="{{true}}" class='ipt' maxlength="{{Length}}" focus="{{isFocus}}" bindinput="Focus"></input>
+  <view>
+    <button class="btn-area" formType="submit">Submit</button>
+  </view>
+</form>
+旋转动画
+<view class='body'>
+  <view id="loader">
+
+  </view>
+</view>
+<view class='round'>
+  <view class='left'></view>
+  <view class='right'></view>
+  <view class='inround'></view>
+
+</view>

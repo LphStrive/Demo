@@ -1,18 +1,21 @@
+page{
+  padding-bottom: 40rpx;
+}
 swiper {
   width: 750rpx;
-  height: 100rpx;
+  height: 300rpx;
 }
 
 swiper-item {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 150rpx;
+  width: 300rpx;
 }
 
 .box {
-  width: 50rpx;
-  height: 50rpx;
+  width: 300rpx;
+  height: 300rpx;
   background-color: red;
   text-align: center;
 }
@@ -62,7 +65,6 @@ swiper-item {
 
 .bgBox2 {
   display: flex;
- 
   justify-content: space-around;
   width: 200rpx;
   height: 200rpx;
@@ -70,24 +72,166 @@ swiper-item {
   background-color: #e5e5e5;
   border-radius: 10rpx;
 }
+
 .dian2 {
   width: 50rpx;
   height: 50rpx;
   background-color: #333;
   border-radius: 50%;
 }
-.dian2:nth-child(2){
+
+.dian2:nth-child(2) {
   width: 50rpx;
   height: 50rpx;
   background-color: #333;
   border-radius: 50%;
   align-self: flex-end;
 }
-.btn{
+
+.btn {
   position: absolute;
-text-align: center;
+  text-align: center;
 }
-.text{
 
+.boxbg {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #333;
+  opacity: 0.5;
+}
 
+.inner {
+  position: fixed;
+  z-index: 999;
+  top: 200rpx;
+  width: 100vw;
+  height: 800rpx;
+  background-color: #fff;
+}
+
+.banner {
+  width: 100vw;
+  height: 600rpx;
+  background-color: yellow;
+}
+
+.item {
+  width: 100rpx;
+  height: 100rpx;
+  background-color: red;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 200rpx;
+}
+
+.iptbox {
+  width: 80rpx;
+  height: 80rpx;
+  border: 1rpx solid #ddd;
+  border-radius: 20rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.ipt {
+  width: 0;
+  height: 0;
+}
+
+.btn-area {
+  width: 80%;
+  background-color: orange;
+  color: white;
+}
+
+.body {
+  background-color: green;
+}
+
+#loader {
+  animation: load-effect 3s infinite linear;
+  text-indent: -9999px;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  box-shadow: inset 0 0 0 15px rgba(255, 255, 255, 0.2); /*设置内部阴影，为白色，宽度为15px*/
+  border-radius: 50%;
+  /*用渐变来做出尾巴的效果*/
+  background: linear-gradient(to right, #fff 10%, rgba(255, 255, 255, 0) 50%);
+}
+
+#loader:after {
+  position: absolute;
+  content: '';
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  left: 15px;
+  top: 15px;
+  background: green;
+}
+
+@keyframes load-effect {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.round {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200rpx;
+  height: 200rpx;
+  /* border-left: 20rpx solid;
+  border-right: 20rpx solid; *//* /* border-image: -webkit-linear-gradient(red, blue) 30 30;
+  border-image: -moz-linear-gradient(red, blue) 30 30;
+  border-image: linear-gradient(#fff, red) 30 30; */
+  border-radius: 50%;
+  overflow: hidden;
+   animation: round 3s infinite linear;
+}
+
+.left {
+  width: 100rpx;
+  height: 200rpx;
+  /* background-image: linear-gradient(#fff, red) 30 30; */
+  background: -webkit-linear-gradient(#fff, red) ;
+}
+
+.right {
+  width: 100rpx;
+  height: 200rpx;
+  /* background-image: linear-gradient(blue, #fff) 30 30; */
+    background: -webkit-linear-gradient(blue, #fff) ;
+}
+.inround{
+  position: absolute;
+  width: 180rpx;
+  height: 180rpx;
+  background-color: #fff;
+  border-radius: 50%;
+}
+@keyframes round {
+  0% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
 }

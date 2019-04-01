@@ -1,10 +1,10 @@
 {
   "pages": [
+    "pages/index/index",
     "pages/map/map",
     "pages/gdmap/gdmap",
     "pages/bolang/bolang",
     "pages/rili/rili",
-    "pages/index/index",
     "pages/donghua/donghua",
     "pages/canvans/canvans",
     "pages/jindutiao/jindutiao",
