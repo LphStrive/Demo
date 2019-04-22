@@ -3,9 +3,9 @@ const app = getApp();
 
 Page({
   data: {
-    Length: 6,    //输入框个数 
-    isFocus: true,  //聚焦 
-    Value: "",    //输入的内容 
+    Length: 6, //输入框个数 
+    isFocus: true, //聚焦 
+    Value: "", //输入的内容 
     ispassword: true, //是否密文显示 true为密文， false为明文。
     list: [{
         id: 1,
@@ -65,7 +65,20 @@ Page({
     console.log(that.data.time)
     let time = that.data.time.substring(0, 9)
     console.log(time)
+
+    let arr = [];
+    for (let i = 0; i < 5; i++) {
+      const a = {}
+      a.name = "name" + i
+      a.id = "id" + i
+      arr.push(a)
+      console.log(arr)
+    }
+    
   },
+
+
+
   current: function(e) {
     const that = this;
     let current = e.detail.current;
@@ -82,7 +95,7 @@ Page({
     })
   },
 
-  
+
   Focus(e) {
     var that = this;
     console.log(e.detail.value);
@@ -99,7 +112,7 @@ Page({
   },
   formSubmit(e) {
     console.log(e.detail.value.password);
-  }, 
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

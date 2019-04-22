@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/bgmove/bgmove",
     "pages/index/index",
     "pages/map/map",
     "pages/gdmap/gdmap",

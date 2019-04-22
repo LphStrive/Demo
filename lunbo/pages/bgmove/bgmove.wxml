@@ -1,0 +1,15 @@
+<image class="bg"></image>
+<image class="bg2"></image>
+<view class='shouTimeBox'>
+  <view class='outBox'>
+    <view class='leftRound'>
+      <view class='circleProgress leftcircle'></view>
+    </view>
+    <view class='rightRound'>
+      <view class='circleProgress rightcircle'></view>
+    </view>
+    <view class='roundbg'>11</view>
+  </view>
+</view>
+
+<!-- <view class='circleProgress rightcircle'></view> -->

@@ -1,0 +1,141 @@
+page {
+  display: flex;
+}
+
+.bg {
+  position: absolute;
+  width: 750rpx;
+  height: 300rpx;
+  background-color: #ccc;
+  animation: move 10s ease;
+  animation-iteration-count: infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(750rpx);
+  }
+}
+
+.bg2 {
+  position: absolute;
+  width: 750rpx;
+  height: 300rpx;
+  background-color: red;
+  animation: move1 10s ease;
+  animation-iteration-count: infinite;
+}
+
+@keyframes move1 {
+  0% {
+    transform: translateX(-750rpx);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.shouTimeBox {
+  width: 136rpx;
+  height: 136rpx;
+  margin-top: 500rpx;
+  background: rgba(55, 108, 253, 1);
+  box-shadow: 0px 6rpx 17rpx 1rpx rgba(55, 108, 253, 0.7);
+  border-radius: 50%;
+}
+
+.outBox {
+  position: relative;
+  width: 112rpx;
+  height: 112rpx;
+  margin: 0 auto;
+  margin-top: 12rpx;
+}
+
+.roundbg {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 72rpx;
+  height: 72rpx;
+  border-radius: 50%;
+  border: 20rpx solid #7398fe;
+  font-size: 60rpx;
+  font-family: FZY4JW--GB1-0;
+  font-weight: bold;
+  color: rgba(255, 254, 254, 1);
+  text-shadow: 0rpx 4rpx 8rpx rgba(23, 78, 228, 0.9);
+  text-align: center;
+}
+
+.leftRound {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 56rpx;
+  height: 112rpx;
+  overflow: hidden;
+}
+
+.rightRound {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 56rpx;
+  height: 112rpx;
+  overflow: hidden;
+}
+
+.circleProgress {
+  width: 72rpx;
+  height: 72rpx;
+  border: 20rpx solid transparent;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  transform: rotate(40deg);
+  z-index: 999;
+}
+
+.rightcircle {
+  border-top: 20rpx solid #37e1fa;
+  border-right: 20rpx solid #37e1fa;
+  right: 2rpx;
+  animation: circleProgressLoad_right 5s linear infinite;
+}
+
+.leftcircle {
+  border-bottom: 20rpx solid #37e1fa;
+  border-left: 20rpx solid #37e1fa;
+  left: 0;
+  animation: circleProgressLoad_left 5s linear infinite;
+}
+
+@keyframes circleProgressLoad_right {
+  0% {
+    transform: rotate(45deg);
+  }
+
+  50%, 100% {
+    transform: rotate(225deg);
+  }
+}
+
+@keyframes circleProgressLoad_left {
+  0%, 50% {
+    transform: rotate(45deg);
+  }
+
+  100% {
+    transform: rotate(225deg);
+  }
+}
